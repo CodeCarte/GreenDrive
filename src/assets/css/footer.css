@@ -1,0 +1,86 @@
+footer #footer-container {
+  background-color: #ede6e6;
+  height: 137px;
+  font-size: 20px;
+}
+
+footer #principalTagP::after {
+  content: 'Desenvolvido por "CodeCartel"';
+}
+
+footer #yearTagP {
+  display: none;
+}
+
+@media (max-width: 1332px) {
+  footer #footer-container {
+    font-size: 16px;
+  }
+  footer #fiapLogo {
+    width: 100px;
+    height: 60px;
+  }
+  footer #greenEnergy {
+    width: 80px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 1117px) {
+  footer #start-container {
+    padding-bottom: 10px;
+  }
+  footer #footer-container {
+    font-size: 14px;
+  }
+  footer #principalTagP::after {
+    content: '"Feito por CodeCartel"';
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 838px) {
+  footer .membersName {
+    width: 70px;
+  }
+}
+
+@media (max-width: 681px) {
+  footer #principalTagP::after {
+    content: '"CodeCartel"';
+  }
+}
+
+@media (max-width: 650px) {
+  footer .membersName {
+    display: none;
+  }
+  footer #yearTagP {
+    display: block;
+    font-size: 16px;
+  }
+  footer #imgFooterContainer {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  footer #fiapLogo {
+    width: 90px;
+    height: auto;
+  }
+  footer #greenEnergy {
+    width: 38px;
+    height: auto;
+  }
+  footer #membersNameContainer {
+    padding-right: 36px;
+  }
+}
+
+@media (max-width: 376px) {
+  footer #membersNameContainer {
+    padding-right: 20px;
+  }
+}

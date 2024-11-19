@@ -1,0 +1,36 @@
+header #greenDriveLogo {
+  position: absolute;
+  top: 6px;
+}
+
+header {
+  position: relative;
+  z-index: 10;
+}
+
+header .nav-item {
+  margin-left: 10px;
+}
+
+header .nav-link {
+  font-size: 20px;
+}
+
+.navbar .nav-link:hover {
+  color: #28a745; /* cor do texto no hover */
+  background-color: transparent; /* cor de fundo no hover */
+}
+
+@media (min-width: 1441px) {
+  header .nav-link {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  header #greenDriveLogo {
+    top: 17px;
+    width: 100px;
+    height: auto;
+  }
+}

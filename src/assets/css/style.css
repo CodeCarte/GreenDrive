@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:opsz,wght@14..32,600&display=swap");
+
+body {
+  width: 100%;
+  font-family: "Inter", serif;
+}
+
+main #introductionMainImage {
+  height: 100vh;
+  object-fit: cover;
+}
+
+@media (max-width: 1430px) {
+  main #introductionMainImage {
+    height: 80vh;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 992px) {
+  main #introductionMainImage {
+    height: 70vh;
+    object-fit: cover;
+  }
+}
