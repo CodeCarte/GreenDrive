@@ -4,8 +4,11 @@ header #greenDriveLogo {
 }
 
 header {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 header .nav-item {
@@ -17,8 +20,7 @@ header .nav-link {
 }
 
 .navbar .nav-link:hover {
-  color: #28a745; /* cor do texto no hover */
-  background-color: transparent; /* cor de fundo no hover */
+  color: #28a745;
 }
 
 @media (min-width: 1441px) {

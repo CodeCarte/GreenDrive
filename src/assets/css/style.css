@@ -5,21 +5,105 @@ body {
   font-family: "Inter", serif;
 }
 
+main {
+  margin-bottom: 2000px;
+}
+
+main .img-introduction-container {
+  width: 100%;
+  height: 100vh;
+}
+
 main #introductionMainImage {
   height: 100vh;
+  z-index: -1;
   object-fit: cover;
 }
 
+main .titleContainer {
+  position: absolute;
+  top: 26%;
+  left: 6%;
+}
+main .titleContainer h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+main .grreeDrivetitleP {
+  font-size: 34px;
+}
+main .introductionSectionContainer {
+  margin-top: 60px;
+  gap: 60px;
+}
+
+main .libraryInfoPart1 {
+  width: 42%;
+}
+
+main .libraryInfoPart2 .principalH2Features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+main .libraryInfoPart2 .principalH2Features h2 {
+  margin: 0;
+}
+
+main .grennDriveIntroduction {
+  font-size: 50px;
+}
+
+main .greenDriveResume {
+  font-size: 28px;
+}
+
+main .greenDriveSpan {
+  color: #618f1f;
+}
+
+main .guideSpan {
+  color: #eda7a7;
+}
+
+main .carEvolutionSection {
+  margin-top: 140px;
+}
+
+main .titleCarEvolutionSecionContainer h1 {
+  margin-left: 155px;
+  font-size: 40px;
+}
+
+main .card-container {
+  font-size: 20px;
+  width: 600px;
+  height: 400px;
+}
+
+@media (min-width: 1441px) {
+  main .titleContainer h1 {
+    font-size: 80px;
+  }
+  main .titleContainer p {
+    font-size: 50px;
+  }
+}
+
 @media (max-width: 1430px) {
+  main .img-introduction-container {
+    height: 80vh;
+  }
   main #introductionMainImage {
     height: 80vh;
-    object-fit: cover;
   }
 }
 
 @media (max-width: 992px) {
   main #introductionMainImage {
     height: 70vh;
-    object-fit: cover;
   }
 }
