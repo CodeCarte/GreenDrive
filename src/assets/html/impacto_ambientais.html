@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <title>Impactos Ambientais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/impactos_ambientais.css">
@@ -15,51 +15,121 @@
     <header>
         <nav class="navbar navbar-expand-lg p-3 bg-white">
             <div class="container-fluid">
-              <a href="" class="navbar-brand"><img src="./assets/imgs/greeendriveLogo.png" class="img-fluid" id="greenDriveLogo" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto fs-5">
-                  <li class="nav-item"><a href="" class="nav-link">Impactos ambientais</a></li>
-                  <li class="nav-item"><a href="" class="nav-link">Eficiência dos carros</a></li>
-                  <li class="nav-item"><a href="" class="nav-link">Carros do futuro</a></li>
-                  <li class="nav-item"><a href="" class="nav-link">Biblioteca</a></li>
-                </ul>
-              </div>
+                <a href="#" class="navbar-brand">
+                    <img src="../imgs/greeendriveLogo.png" class="img-fluid" id="greenDriveLogo" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ms-auto fs-5">
+                        <li class="nav-item"><a href="#" class="nav-link">Impactos ambientais</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Eficiência dos carros</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Carros do futuro</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Biblioteca</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
+
     <main>
-      
+        <section class="titulo hero-section text-white" style="background-image: url('../imgs/img-impacto.png'); background-size: cover; background-position: center; height: 95vh;">
+            <div>
+                <h1>Olhando para um futuro melhor</h1>
+                <p>Como nossas escolhas veiculares impactam o planeta</p>
+            </div>
+        </section>
+
+        <div class="text-center my-5">
+            <img src="../imgs/seta-impacto.png" alt="">
+        </div>
+
+        <section class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <img src="../imgs/usinas-impacto.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <h1 style="color: #618F1F;" class="fs-1 fw-bold">Usinas termelétricas</h1>
+                    <p class="fw-bold">As usinas termoelétricas, embora importantes para a geração de energia, são grandes fontes de poluição ambiental. Elas queimam combustíveis fósseis como carvão, gás natural e óleo, liberando grandes quantidades de CO2 e outros gases poluentes na atmosfera. Uma única usina termoelétrica pode emitir milhões de toneladas de CO2 por ano, além de contribuir para a chuva ácida e poluição do ar.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center my-5">
+            <img src="../imgs/seta2-impacto.png" alt="">
+        </div>
+
+        <section class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="../imgs/poluicao-impacto.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h1 style="color: #EDA7A7;" class="fs-1 fw-bold">Poluição por carros</h1>
+                    <p class="fw-bold">A poluição causada por carros é uma das principais fontes de degradação ambiental nas cidades. Os veículos emitem gases tóxicos e partículas poluentes que prejudicam a qualidade do ar, contribuindo para problemas respiratórios e aquecimento global. Em grandes centros urbanos, o tráfego intenso de veículos é responsável por até 80% da poluição atmosférica, tornando crucial a transição para transportes mais limpos e sustentáveis.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container my-5">
+            <h1 class="text-center mt-5 pt-5 fw-bold" style="color: #618F1F;">Informações adicionais</h1>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="../imgs/slide1.png" class="d-block mx-auto carousel-image" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="../imgs/slide2.png" class="d-block mx-auto carousel-image" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../imgs/slide3.png" class="d-block mx-auto carousel-image" alt="Slide 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <div class="container-fluid d-flex justify-content-between align-items-center w-100" id="footer-container">
-          <div id="rowFooter" class="row w-100">
-            <div id="start-container" class="col-4 d-flex justify-content-start  align-items-center">
-              <div id="imgFooterContainer">
-                <img src="./assets/imgs/Logo da Fiap 1.png" id="fiapLogo" class="img-fluid footer-img" alt="Logo da fiap">
-                <img src="./assets/imgs/greenEnergy.png" id="greenEnergy" class="img-fluid footer-img" alt="Logo da green energy">
-              </div>
+      <div class="container-fluid d-flex justify-content-between align-items-center w-100" id="footer-container">
+        <div id="rowFooter" class="row w-100">
+          <div id="start-container" class="col-4 d-flex justify-content-start  align-items-center">
+            <div id="imgFooterContainer">
+              <img src="../imgs/Logo da Fiap 1.png" id="fiapLogo" class="img-fluid footer-img" alt="Logo da fiap">
+              <img src="../imgs/greenEnergy.png" id="greenEnergy" class="img-fluid footer-img" alt="Logo da green energy">
             </div>
-            <div id="nameGroup" class="col-4 d-flex justify-content-center align-items-center">
-              <p id="principalTagP"></p > 
-            </div>
-            <div id="membersNameContainer" class="col-4 d-flex justify-content-end align-items-center">
-              <div class="d-flex gap-5 ">
-                <div class="membersName">
-                  <p>Angelo Batista</p>
-                  <p>Victor Martins</p>
-                </div>
-                <div class="membersName">
-                  <p>Andre Flores</p>
-                  <p>Yasmin Kimura</p>
-                </div>
-                <p id="yearTagP">2024*</p>
+          </div>
+          <div id="nameGroup" class="col-4 d-flex justify-content-center align-items-center">
+            <p id="principalTagP"></p > 
+          </div>
+          <div id="membersNameContainer" class="col-4 d-flex justify-content-end align-items-center">
+            <div class="d-flex gap-5 ">
+              <div class="membersName">
+                <p>Angelo Batista</p>
+                <p>Victor Martins</p>
               </div>
+              <div class="membersName">
+                <p>Andre Flores</p>
+                <p>Yasmin Kimura</p>
+              </div>
+              <p id="yearTagP">2024*</p>
             </div>
           </div>
         </div>
+      </div>
     </footer>
+
 </body>
 </html>
