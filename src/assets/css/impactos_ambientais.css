@@ -1,5 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:opsz,wght@14..32,600&display=swap");
 
 body {
-  font-family: "Inter", serif;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo {
+  padding-top: 250px;
+  padding-left: 110px;
+}
+
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh;
+    background-position: top;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-image {
+    max-height: 400px;
+  }
 }
