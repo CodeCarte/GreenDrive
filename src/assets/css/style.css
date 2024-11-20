@@ -6,7 +6,7 @@ body {
 }
 
 main {
-  margin-bottom: 2000px;
+  margin-bottom: 200px;
 }
 
 main .img-introduction-container {
@@ -35,11 +35,12 @@ main .grreeDrivetitleP {
 }
 main .introductionSectionContainer {
   margin-top: 60px;
+  margin-left: 90px;
   gap: 60px;
 }
 
 main .libraryInfoPart1 {
-  width: 42%;
+  width: 48%;
 }
 
 main .libraryInfoPart2 .principalH2Features {
@@ -71,17 +72,77 @@ main .guideSpan {
 
 main .carEvolutionSection {
   margin-top: 140px;
+  margin-bottom: 180px;
 }
 
 main .titleCarEvolutionSecionContainer h1 {
-  margin-left: 155px;
+  width: 600px;
   font-size: 40px;
+  margin-bottom: 30px;
+  margin-left: 90px;
+}
+
+main .carEvolutionTopicsContainer {
+  column-gap: 100px;
 }
 
 main .card-container {
   font-size: 20px;
-  width: 600px;
-  height: 400px;
+  width: 580px;
+  gap: 20px;
+  height: 300px;
+}
+
+main .talkToUsSection {
+  width: 100%;
+  height: 556px;
+  background-color: #ede6e6;
+  margin-bottom: 200px;
+}
+
+main #talkToUSIcon {
+  width: 512px;
+  height: 512px;
+  image-rendering: crisp-edges;
+  margin-right: 200px;
+}
+
+main .talkToUsSection h2 {
+  font-size: 40px;
+}
+
+main .talkToUsSection .talkToUsInput {
+  width: 447px;
+  margin-bottom: 9px;
+  height: 52px;
+  border: none;
+  padding: 8px;
+  outline: none;
+}
+
+main .talkToUsSection .talkToUsDivInputText .talkToUsInputText {
+  width: 221px;
+}
+
+main #contactPrefer {
+  border: none;
+  padding: 8px;
+  height: 48px;
+  outline: none;
+}
+
+main .talkToUsSection button {
+  margin-top: 9px;
+  height: 40px;
+  border: none;
+  background-color: #353535;
+  color: white;
+}
+
+main .VideoPitch {
+  width: 800px;
+  height: 500px;
+  background-color: #d9d9d9;
 }
 
 @media (min-width: 1441px) {

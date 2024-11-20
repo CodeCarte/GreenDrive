@@ -40,7 +40,7 @@
             <h1>GreenDrive</h1>
             <p class="grreeDrivetitleP">Cada decisão consciente conta</p>
           </section>
-          <section class="introductionSectionContainer d-flex w-100 justify-content-center align-items-center">
+          <section class="introductionSectionContainer d-flex align-items-center">
               <div class="libraryInfoPart1">
                 <h1 class="grennDriveIntroduction">Introdução a GreenDrive:</h1>
                 <p class="greenDriveResume">
@@ -63,11 +63,11 @@
                 </ul>
               </div>
           </section>
-          <section class="d-flex flex-column w-100">
-            <div class="titleCarEvolutionSecionContainer d-flex carEvolutionSection w-100">
+          <section class="carEvolutionSection d-flex flex-column w-100">
+            <div class="titleCarEvolutionSecionContainer d-flex ">
               <h1>Sustentabilidade e Evolução dos Veículos:</h1>
             </div>
-            <div class="carEvolutionTopicsContainer d-flex flex-wrap align-items-center justify-content-center w-100">
+            <div class="carEvolutionTopicsContainer d-flex flex-wrap align-items-center justify-content-center  w-100">
               <div class="card-container d-flex justify-content-center align-items-center">
                 <img src="./assets/imgs/carIcon.png" alt="imagem de um posto elétrico"> 
                 <p>Biblioteca de Carros<br>
@@ -98,6 +98,28 @@
                 </p>
               </div>
             </div>
+          </section>
+          <section class="talkToUsSection d-flex  ps-5">
+            <img id="talkToUSIcon" src="./assets/imgs/talkToUsIcon.png" alt="ilustração do fale conosco">
+            <div class="talkToUsForm mt-5">
+              <form action="#" class="d-flex flex-column">
+                <h2>Fale Conosco</h2>
+                <div class="talkToUsDivInputText">
+                  <input required type="text" placeholder="Nome" class="talkToUsInput talkToUsInputText">
+                  <input required type="text" placeholder="Telefone" class="talkToUsInput talkToUsInputText">
+                </div>
+                <input required type="email" placeholder="Email" class="talkToUsInput">
+                <select required id="contactPrefer" name="contact">
+                  <option value="" selected disabled>Preferência de contato</option>
+                  <option value="volvo">Email</option>
+                  <option value="saab">Telefone</option>
+                </select>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+          </section>
+          <section class="videoPitchSection d-flex justify-content-center align-items-center">
+              <div class="VideoPitch d-flex justify-content-center align-items-center fs-1">Video pitch</div>
           </section>
         </div>
     </main>
