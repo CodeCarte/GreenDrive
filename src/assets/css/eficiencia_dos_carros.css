@@ -126,6 +126,61 @@ body {
   line-height: 1;
 }
 
+.impact-section {
+  padding: 0rem 0;
+  text-align: center;
+}
+
+.impact-title {
+  color: #68a043;
+  font-size: 2.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.stat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.stat-number {
+  color: #ff9999;
+  font-size: 3.6rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.stat-text {
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 180px;
+  text-align: center;
+  color: #333;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #7b7b7b;
+  margin: 4rem 0;
+  opacity: 0.8;
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .section-container {
     margin-bottom: 3rem;
@@ -143,5 +198,14 @@ body {
   .green-title,
   .pink-title {
     font-size: 2rem;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .stat-text {
+    margin-bottom: 2rem;
   }
 }
