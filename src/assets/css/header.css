@@ -16,7 +16,7 @@ header .nav-item {
 }
 
 header .nav-link {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .navbar .nav-link:hover {
@@ -25,7 +25,7 @@ header .nav-link {
 
 @media (min-width: 1441px) {
   header .nav-link {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 

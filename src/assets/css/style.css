@@ -50,6 +50,10 @@ main .libraryInfoPart2 .principalH2Features {
   gap: 6px;
 }
 
+main .liContainer {
+  margin-left: 48px;
+}
+
 main .libraryInfoPart2 .principalH2Features h2 {
   margin: 0;
 }
@@ -93,11 +97,16 @@ main .card-container {
   height: 300px;
 }
 
+main .spanCarEvolutionCard {
+  color: #618f1f;
+}
+
 main .talkToUsSection {
   width: 100%;
   height: 556px;
   background-color: #ede6e6;
   margin-bottom: 200px;
+  padding-left: 48px;
 }
 
 main #talkToUSIcon {
@@ -145,12 +154,42 @@ main .VideoPitch {
   background-color: #d9d9d9;
 }
 
+@media (min-width: 1800px) {
+  main .card-container {
+    font-size: 24px;
+    width: 700px;
+    gap: 20px;
+    height: 300px;
+  }
+}
+
 @media (min-width: 1441px) {
   main .titleContainer h1 {
     font-size: 80px;
   }
   main .titleContainer p {
     font-size: 50px;
+  }
+  main .talkToUsSection {
+    justify-content: center;
+  }
+  main .introductionSectionContainer {
+    margin-top: 120px;
+    margin-left: 130px;
+  }
+  main .titleCarEvolutionSecionContainer h1 {
+    margin-left: 130px;
+  }
+  main .liContainer li {
+    font-size: 22px;
+    margin-left: 48px;
+  }
+  main .libraryInfoPart2 .principalH2Features h2 {
+    font-size: 38px;
+  }
+  main .grennDriveIntroduction {
+    font-size: 54px;
+    margin-bottom: 36px;
   }
 }
 
@@ -163,8 +202,186 @@ main .VideoPitch {
   }
 }
 
+@media (max-width: 1264px) {
+  main .introductionSectionContainer {
+    margin-left: 86px;
+  }
+  main .titleCarEvolutionSecionContainer h1 {
+    margin-left: 86px;
+  }
+  main .grennDriveIntroduction {
+    font-size: 40px;
+    margin-bottom: 60px;
+  }
+  main .greenDriveResume {
+    font-size: 20px;
+  }
+  main .libraryInfoPart2 .principalH2Features h2 {
+    font-size: 26px;
+  }
+  main .titleCarEvolutionSecionContainer h1 {
+    font-size: 40px;
+  }
+  main .card-container {
+    font-size: 18px;
+    width: 500px;
+    gap: 20px;
+    height: 300px;
+  }
+  main .carEvolutionTopicsContainer {
+    column-gap: 40px;
+  }
+
+  main #talkToUSIcon {
+    margin-right: 100px;
+  }
+  main .talkToUsSection h2 {
+    font-size: 30px;
+  }
+  main .talkToUsSection .talkToUsDivInputText .talkToUsInputText {
+    width: 160px;
+  }
+  main #contactPrefer {
+    height: 48px;
+  }
+  main .talkToUsSection button {
+    margin-top: 9px;
+    height: 40px;
+  }
+  main .talkToUsSection .talkToUsInput {
+    width: 322px;
+  }
+}
+
+@media (max-width: 1047px) {
+  main .titleContainer {
+    top: 18%;
+  }
+  main .titleContainer h1 {
+    font-size: 50px;
+  }
+  main .titleContainer p {
+    font-size: 30px;
+  }
+  main .card-container {
+    font-size: 18px;
+    width: 600px;
+    gap: 20px;
+    height: 300px;
+  }
+  main .grennDriveIntroduction {
+    font-size: 34px;
+  }
+
+  main .titleCarEvolutionSecionContainer h1 {
+    font-size: 34px;
+  }
+  main .carEvolutionSection {
+    margin-bottom: 20px;
+  }
+  main .talkToUsSection {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 1010px) {
+  main .talkToUsSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+  }
+  main #talkToUSIcon {
+    width: 400px;
+    height: 400px;
+    margin-right: 0px;
+  }
+  main .talkToUsSection .talkToUsDivInputText .talkToUsInputText {
+    width: 200px;
+  }
+  main #contactPrefer {
+    width: 402px;
+  }
+  main .talkToUsSection button {
+    width: 402px;
+    margin-top: 9px;
+  }
+  main .talkToUsSection .talkToUsInput {
+    width: 402px;
+  }
+  main .VideoPitch {
+    width: 600px;
+    height: 400px;
+  }
+}
+
 @media (max-width: 992px) {
   main #introductionMainImage {
     height: 70vh;
+  }
+}
+
+@media (max-width: 954px) {
+  main .introductionSectionContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  main .libraryInfoPart1 {
+    text-align: center;
+  }
+  main .libraryInfoPart2 {
+    text-align: center;
+    width: 456px;
+  }
+  main .libraryInfoPart2 .principalH2Features h2 {
+    font-size: 30px;
+  }
+  main .liContainer {
+    margin-left: 40px;
+  }
+  main .titleCarEvolutionSecionContainer {
+    align-items: center;
+    justify-content: center;
+  }
+  main .grennDriveIntroduction {
+    font-size: 36px;
+  }
+  main .titleCarEvolutionSecionContainer h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 654px) {
+  main .titleContainer {
+    top: 14%;
+  }
+  main .titleContainer h1 {
+    font-size: 30px;
+  }
+  main .titleContainer p {
+    font-size: 20px;
+  }
+  main #introductionMainImage {
+    height: 50vh;
+  }
+  main .liContainer {
+    padding: 2px;
+    margin-left: 8px;
+  }
+  main .carEvolutionSection {
+    padding: 24px;
+  }
+
+  main .carEvolutionImgs {
+    width: 60px;
+    height: 60px;
+  }
+  main .VideoPitch {
+    width: 400px;
+    height: 200px;
   }
 }
