@@ -48,6 +48,7 @@ main .libraryInfoPart2 .principalH2Features {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  margin-top: 40px;
 }
 
 main .liContainer {
@@ -63,7 +64,7 @@ main .grennDriveIntroduction {
 }
 
 main .greenDriveResume {
-  font-size: 28px;
+  font-size: 22px;
 }
 
 main .greenDriveSpan {
