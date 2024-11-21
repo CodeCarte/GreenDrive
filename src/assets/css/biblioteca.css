@@ -10,7 +10,6 @@ main #libraryContainer {
 
 main .img-introduction-container {
   width: 100%;
-  height: 639px;
 }
 
 main .titleLibraryCarContainer {
@@ -198,6 +197,21 @@ main .buttonSearchBar:hover {
   box-shadow: 0 4px 8px rgba(104, 160, 67, 0.3);
 }
 
+.no-car-message {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#carCardRow {
+  display: flex;
+  justify-content: center;
+}
+
+.car-card-container {
+  display: flex;
+  justify-content: center;
+}
+
 /*Card Responsividade*/
 
 @media (max-width: 1200px) {
@@ -232,5 +246,8 @@ main .buttonSearchBar:hover {
   .eco-badge {
     padding: 4px 12px;
     font-size: 0.8rem;
+  }
+  .car-card-container {
+    max-width: 100%;
   }
 }

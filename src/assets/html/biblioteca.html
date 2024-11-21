@@ -20,7 +20,7 @@
   <header>
     <nav class="navbar navbar-expand-lg p-3 bg-white">
       <div class="container-fluid">
-        <a href="" class="navbar-brand"><img src="./assets/imgs/greeendriveLogo.png" class="img-fluid"
+        <a href="../../index.html" class="navbar-brand"><img src="../imgs/greeendriveLogo.png" class="img-fluid"
             id="greenDriveLogo" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +39,9 @@
     </nav>
   </header>
   <main>
-    <div id="libraryContainer" class="container-fluid">
+    <div id="libraryContainer" class="container-fluid d-flex flex-column align-items-center justify-content-center">
       <div class="img-introduction-container">
-        <img src="../imgs/libraryCarImage.png" class="carLibraryImg img-fluid w-100 position-absolute"
+        <img src="../imgs/libraryCarImage.png" class="carLibraryImg img-fluid w-100"
           alt="imagem de um carro">
       </div>
       <div class="titleLibraryCarContainer">
@@ -49,14 +49,14 @@
         <p class="pLibraryTitle">Compare e encontre os veículos mais eficientes e sustentáveis do mercado</p>
       </div>
       <section class="searchBarContainer d-flex align-items-center justify-content-start gap-3 p-5">
-        <input placeholder="Buscar veículos..." type="text">
-        <select name="" id="">
+        <input id="searchQuery" placeholder="Buscar veículos..." type="text">
+        <select name="" id="typeEngine">
           <option disabled selected value=""><span class="selectTitle">Tipo de Motor</span></option>
           <option value="Híbrido">Híbrido</option>
           <option value="Elétrico">Elétrico</option>
           <option value="Combustão">Combustão</option>
         </select>
-        <select id="co2Emission" onchange="filterCards()">
+        <select id="co2Emission">
           <option disabled selected value=""><span class="selectTitle">Emissão de CO₂</span></option>
           <option value="baixo">Baixo (0-50 g/km)</option>
           <option value="moderado">Moderado (51-150 g/km)</option>
@@ -68,9 +68,8 @@
 
     <div class="container py-5">
 
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-12 col-sm-6 col-lg-4">
+      <div id="carCardRow" class="row g-4">
+        <div class="car-card-container col-12 col-sm-6 col-lg-4">
           <div class="car-card h-100">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
@@ -81,7 +80,7 @@
               <p class="car-subtitle">2024 • Híbrido</p>
               <div class="info-badge">
                 <span class="info-label">Emissão de CO₂</span>
-                <span class="info-value">/ 104 g/km</span>
+                <span data-co2-value="moderado" class="info-value">/ 104 g/km</span>
               </div>
               <div class="info-badge">
                 <span class="info-label">Eficiência</span>
@@ -92,18 +91,18 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
+        <div class="car-card-container col-12 col-sm-6 col-lg-4">
           <div class="car-card h-100">
             <div class="eco-badge" style="background: #dc3545;">ECO</div>
             <div class="car-image-container">
               <img src="../imgs/toyotacorollahibrido.jpg" alt="Toyota Corolla Híbrido" class="car-image">
             </div>
             <div class="card-content">
-              <h2 class="car-title">Toyota Corolla Híbrido</h2>
+              <h2 class="car-title">Camaro</h2>
               <p class="car-subtitle">2024 • Híbrido</p>
               <div class="info-badge">
                 <span class="info-label">Emissão de CO₂</span>
-                <span class="info-value">/ 104 g/km</span>
+                <span data-co2-value="moderado"  class="info-value">/ 104 g/km</span>
               </div>
               <div class="info-badge">
                 <span class="info-label">Eficiência</span>
@@ -114,7 +113,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
+        <div class="car-card-container col-12 col-sm-6 col-lg-4">
           <div class="car-card h-100">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
@@ -125,7 +124,7 @@
               <p class="car-subtitle">2024 • Híbrido</p>
               <div class="info-badge">
                 <span class="info-label">Emissão de CO₂</span>
-                <span class="info-value">/ 104 g/km</span>
+                <span  data-co2-value="moderado"  class="info-value">/ 104 g/km</span>
               </div>
               <div class="info-badge">
                 <span class="info-label">Eficiência</span>
@@ -136,7 +135,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
+        <div class="car-card-container col-12 col-sm-6 col-lg-4">
           <div class="car-card h-100">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
@@ -147,7 +146,7 @@
               <p class="car-subtitle">2024 • Híbrido</p>
               <div class="info-badge">
                 <span class="info-label">Emissão de CO₂</span>
-                <span class="info-value">/ 104 g/km</span>
+                <span data-co2-value="moderado"  class="info-value">/ 104 g/km</span>
               </div>
               <div class="info-badge">
                 <span class="info-label">Eficiência</span>
@@ -158,7 +157,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
+        <div class="car-card-container col-12 col-sm-6 col-lg-4">
           <div class="car-card h-100">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
@@ -169,7 +168,7 @@
               <p class="car-subtitle">2024 • Híbrido</p>
               <div class="info-badge">
                 <span class="info-label">Emissão de CO₂</span>
-                <span class="info-value">/ 104 g/km</span>
+                <span  data-co2-value="moderado"  class="info-value">/ 104 g/km</span>
               </div>
               <div class="info-badge">
                 <span class="info-label">Eficiência</span>
@@ -180,18 +179,18 @@
           </div>
         </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
+        <div class="car-card-container col-12 col-sm-6 col-lg-4">
           <div class="car-card h-100">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
               <img src="../imgs/toyotacorollahibrido.jpg" alt="Toyota Corolla Híbrido" class="car-image">
             </div>
-            <div class="card-content">
+            <div id="teste" class="card-content">
               <h2 class="car-title">Toyota Corolla Híbrido</h2>
               <p class="car-subtitle">2024 • Híbrido</p>
               <div class="info-badge">
                 <span class="info-label">Emissão de CO₂</span>
-                <span class="info-value">/ 104 g/km</span>
+                <span  data-co2-value="moderado"  class="info-value">/ 104 g/km</span>
               </div>
               <div class="info-badge">
                 <span class="info-label">Eficiência</span>

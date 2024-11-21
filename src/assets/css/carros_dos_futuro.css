@@ -1,16 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:opsz,wght@14..32,600&display=swap");
 
 body {
-  font-family: "Inter", sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+  font-family: "Inter", serif;
 }
 
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   min-height: 600px;
   max-height: 837px;
   margin-bottom: 131px;
@@ -24,7 +21,7 @@ body {
 }
 
 .hero-banner .container {
-  max-width: 90%; 
+  max-width: 90%;
   width: 100%;
   color: #fff;
   padding: 0 1rem;
@@ -50,7 +47,7 @@ body {
 
 @media (min-width: 1200px) {
   .hero-banner h1 {
-    font-size: 6rem; 
+    font-size: 6rem;
   }
   .hero-banner p {
     font-size: 1.5rem;
@@ -69,26 +66,26 @@ body {
   max-width: 1097.73px;
   padding: 20px;
   border-radius: 25.45px;
-  background-color: #EDE6E6;
+  background-color: #ede6e6;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .futuro-da-mobilidade .titulo {
   max-width: 680px;
   margin-bottom: 20px;
-  text-align: left; 
+  text-align: left;
   padding-left: 1rem;
 }
 
 .futuro-da-mobilidade h2 {
-  font-size: 2rem; 
-  color: #618F1F;
+  font-size: 2rem;
+  color: #618f1f;
   margin: 0;
 }
 
 @media (min-width: 768px) {
   .futuro-da-mobilidade h2 {
-    font-size: 3.75rem; 
+    font-size: 3.75rem;
   }
 }
 
@@ -116,15 +113,15 @@ body {
   width: 100%;
   height: 1px;
   margin: 50px 0;
-  background-color: #EDE6E6;
+  background-color: #ede6e6;
 }
 
 h1.text-start {
   font-size: 2.5rem;
-  font-weight: bold; 
-  margin-top: 30px; 
-  margin-bottom: 20px; 
-  text-align: left; 
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
   color: #000000;
 }
 
