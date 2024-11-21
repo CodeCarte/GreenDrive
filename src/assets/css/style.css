@@ -162,6 +162,9 @@ main .VideoPitch {
     gap: 20px;
     height: 300px;
   }
+  main .talkToUsSection {
+    padding: 0px;
+  }
 }
 
 @media (min-width: 1441px) {
