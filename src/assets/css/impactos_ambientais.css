@@ -7,46 +7,80 @@ body {
 }
 
 .titulo {
-  padding-top: 250px;
-  padding-left: 110px;
+  padding: 15% 5%;
 }
 
 .hero-section {
   background-size: cover;
   background-position: center;
-  height: 95vh;
+  height: 80vh;
+  display: flex;
+  align-items: center;
 }
 
 .hero-section h1 {
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-bottom: 1rem;
 }
 
 .hero-section p {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    height: 60vh;
-    background-position: top;
-  }
+.container {
+  padding: 2rem 15px;
+}
 
-  .hero-section h1 {
-    font-size: 2.5rem;
-  }
+.row {
+  margin: 2rem 0;
+}
 
-  .hero-section p {
-    font-size: 1rem;
-  }
+.img-fluid {
+  border-radius: 10px;
+  margin: 1rem 0;
 }
 
 .carousel-image {
   max-width: 100%;
   height: auto;
   max-height: 600px;
+  object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .titulo {
+    padding: 12% 5%;
+  }
+
+  .hero-section {
+    min-height: 70vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .titulo {
+    padding: 10% 4%;
+  }
+
+  .container {
+    padding: 1.5rem 15px;
+  }
+
+  .row {
+    margin: 1.5rem 0;
+  }
 }
 
 @media (max-width: 768px) {
+  .titulo {
+    padding: 8% 3%;
+  }
+
+  .hero-section {
+    height: 60vh;
+    text-align: center;
+  }
+
   .carousel-control-prev,
   .carousel-control-next {
     display: none;
@@ -54,5 +88,41 @@ body {
 
   .carousel-image {
     max-height: 400px;
+  }
+
+  .order-lg-1 {
+    order: 2;
+    text-align: center;
+  }
+
+  .order-lg-2 {
+    order: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  .container {
+    padding: 1rem 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo {
+    padding: 6% 2%;
+  }
+
+  .hero-section {
+    min-height: 50vh;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .carousel-image {
+    max-height: 300px;
   }
 }
