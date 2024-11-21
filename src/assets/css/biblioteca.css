@@ -206,17 +206,30 @@ main .buttonSearchBar:hover {
 #carCardRow {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .car-card-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 140px;
 }
 
-/*Card Responsividade*/
-
 @media (max-width: 1200px) {
+  .car-card-container {
+    width: 400px;
+  }
+  main .titleLibraryCarContainer {
+    top: 18%;
+    left: 10%;
+  }
+  main .h1LibraryTitle {
+    font-size: 2.5rem;
+  }
+  main .pLibraryTitle {
+    font-size: 1rem;
+  }
   .car-card {
     margin-bottom: 1.5rem;
   }
@@ -240,6 +253,53 @@ main .buttonSearchBar:hover {
   }
 }
 
+@media (max-width: 1024px) {
+  main .titleLibraryCarContainer {
+    top: 14%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 912px) {
+  main .searchBarContainer input {
+    width: 150px;
+    height: 40px;
+  }
+
+  main .searchBarContainer select {
+    width: 150px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  main .buttonSearchBar {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 672px) {
+  main .searchBarContainer input {
+    width: 130px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  main .searchBarContainer select {
+    width: 136px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  main .buttonSearchBar {
+    width: 80px;
+    height: 40px;
+  }
+}
+
 @media (max-width: 576px) {
   .car-image-container {
     height: 180px;
@@ -252,4 +312,73 @@ main .buttonSearchBar:hover {
   .car-card-container {
     max-width: 100%;
   }
+}
+
+body.modal-open {
+  overflow: auto !important; /* Mantém o scroll padrão da página */
+  padding-right: 0 !important; /* Remove ajustes desnecessários */
+}
+
+/* Tamanho reduzido do modal */
+.modal-dialog {
+  max-width: 30%; /* Modal mais compacto */
+  margin: 1rem auto; /* Margem para centralização */
+}
+
+/* Configuração do conteúdo do modal */
+.modal-content {
+  max-height: 85vh; /* Limite de altura */
+  overflow-y: auto; /* Scroll interno apenas se necessário */
+  padding: 1.5rem;
+  border-radius: 12px; /* Bordas arredondadas */
+  border: 2px solid #ccc; /* Borda padrão */
+}
+
+/* Ajuste das fontes */
+.modal-title,
+.modal-car-title {
+  font-size: 1.3rem; /* Títulos menores */
+  font-weight: bold;
+}
+
+.modal-car-subtitle {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Bordas padronizadas para os itens da lista */
+.list-group-item {
+  font-size: 0.9rem;
+  border: 2px solid #ccc; /* Bordas padronizadas */
+  border-radius: 10px; /* Bordas arredondadas */
+  margin-bottom: 0.8rem; /* Espaçamento entre itens */
+  padding: 1rem; /* Espaçamento interno */
+  background-color: #f8f8f8; /* Fundo leve */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Leve sombra */
+}
+
+/* Imagens com dimensões consistentes */
+.modal-car-image {
+  width: 200px; /* Largura fixa */
+  height: 150px; /* Altura fixa */
+  object-fit: cover; /* Ajusta sem distorções */
+  border: 2px solid #ccc; /* Bordas padronizadas */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Alinhamento responsivo */
+.modal-body .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-footer {
+  justify-content: center; /* Botões centralizados */
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
 }

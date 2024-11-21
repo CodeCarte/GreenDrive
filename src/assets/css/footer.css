@@ -2,10 +2,10 @@ footer #footer-container {
   background-color: #ede6e6;
   height: 137px;
   font-size: 20px;
-}
-
-footer #nameGroup {
-  padding-left: 39px;
+  display: flex;
+  justify-content: center; /* Centraliza o footer */
+  align-items: center; /* Alinha o conteúdo verticalmente */
+  text-align: center; /* Garante que o conteúdo dentro do footer fique centralizado */
 }
 
 footer #principalTagP::after {

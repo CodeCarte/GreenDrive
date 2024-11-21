@@ -41,7 +41,7 @@ function searchFilter() {
       : true
 
     if (findNameCar && findTypeEngine && findCo2Emission) {
-      element.style.display = 'block'
+      element.style.display = 'flex'
       carFound = true
     } else {
       element.style.display = 'none'
@@ -54,3 +54,50 @@ function searchFilter() {
 }
 
 button.addEventListener('click', searchFilter)
+
+// biome-ignore lint/complexity/noForEach: <explanation>
+document.querySelectorAll('.details-button').forEach(button => {
+  button.addEventListener('click', event => {
+    const card = event.target.closest('.car-card')
+    const carTitle = card.querySelector('.car-title').textContent
+    const carSubtitle = card.querySelector('.car-subtitle').textContent
+    const carImage = card.querySelector('.car-image').src
+
+    document.getElementById('modalCarTitle').textContent = carTitle
+    document.getElementById('modalCarSubtitle').textContent = carSubtitle
+    document.getElementById('modalCarImage').src = carImage
+    document.getElementById('modalPricePerKm').textContent = card.dataset.price
+    document.getElementById('highwayFuelConsumption').textContent =
+      card.dataset.consumoEstrada
+    document.getElementById('cityFuelConsumption').textContent =
+      card.dataset.consumoCidade
+
+    const modal = new bootstrap.Modal(
+      document.getElementById('carDetailsModal')
+    )
+    modal.show()
+  })
+})
+
+document.addEventListener('DOMContentLoaded', () => {
+  const modals = document.querySelectorAll('.modal')
+
+  // biome-ignore lint/complexity/noForEach: <explanation>
+  modals.forEach(modal => {
+    modal.addEventListener('show.bs.modal', () => {
+      document.querySelector('.navbar-nav').classList.add('modal-open-header')
+      document
+        .getElementById('footer-container')
+        .classList.add('modal-open-footer')
+    })
+
+    modal.addEventListener('hidden.bs.modal', () => {
+      document
+        .querySelector('.navbar-nav')
+        .classList.remove('modal-open-header')
+      document
+        .getElementById('footer-container')
+        .classList.remove('modal-open-footer')
+    })
+  })
+})

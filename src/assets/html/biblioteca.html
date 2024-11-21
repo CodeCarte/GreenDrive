@@ -70,7 +70,7 @@
 
       <div id="carCardRow" class="row g-4">
         <div class="car-card-container col-12 col-sm-6 col-lg-4">
-          <div class="car-card h-100">
+          <div class="car-card h-100" data-price="R$0,55" data-consumo-estrada=" 16-18 km/l" data-consumo-cidade=" 14-15 km/l">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
               <img src="../imgs/toyotaCorollaHibrido.png" alt="Toyota Corolla Híbrido" class="car-image">
@@ -92,7 +92,7 @@
         </div>
 
         <div class="car-card-container col-12 col-sm-6 col-lg-4">
-          <div class="car-card h-100">
+          <div class="car-card h-100" data-price="R$0,55" data-consumo-estrada=" 12-14 km/l" data-consumo-cidade=" 9-10 km/l">
             <div class="eco-badge" style="background: #dc3545;">ECO</div>
             <div class="car-image-container">
               <img src="../imgs/golIMG.png" alt="Toyota Corolla Híbrido" class="car-image">
@@ -114,7 +114,7 @@
         </div>
 
         <div class="car-card-container col-12 col-sm-6 col-lg-4">
-          <div class="car-card h-100">
+          <div class="car-card h-100" data-price="R$0,09" data-consumo-estrada=" 14-16 km/kWh" data-consumo-cidade=" 12-14 km/kWh">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
               <img src="../imgs/teslaIMG.png" alt="Toyota Corolla Híbrido" class="car-image">
@@ -136,7 +136,7 @@
         </div>
 
         <div class="car-card-container col-12 col-sm-6 col-lg-4">
-          <div class="car-card h-100">
+          <div class="car-card h-100" data-price="R$0,33" data-consumo-estrada=" 17,5 km/l" data-consumo-cidade=" 15,5 km/l">
             <div class="eco-badge" >ECO</div>
             <div class="car-image-container">
               <img src="../imgs/honda.png" alt="Toyota Corolla Híbrido" class="car-image">
@@ -158,7 +158,7 @@
         </div>
 
         <div class="car-card-container col-12 col-sm-6 col-lg-4">
-          <div class="car-card h-100">
+          <div class="car-card h-100" data-price="R$0,42" data-consumo-estrada=" 13-15 km/l" data-consumo-cidade=" 10-12 km/l">
             <div class="eco-badge" style="background: #dc3545;">ECO</div>
             <div class="car-image-container">
               <img src="../imgs/onix.png" alt="Toyota Corolla Híbrido" class="car-image">
@@ -180,7 +180,7 @@
         </div>
 
         <div class="car-card-container col-12 col-sm-6 col-lg-4">
-          <div class="car-card h-100">
+          <div class="car-card h-100" data-price="R$0,04" data-consumo-estrada=" 8-9 km/kWh" data-consumo-cidade=" 7-8 km/kWh">
             <div class="eco-badge">ECO</div>
             <div class="car-image-container">
               <img src="../imgs/nissan.png" alt="Toyota Corolla Híbrido" class="car-image">
@@ -200,27 +200,65 @@
             </div>
           </div>
         </div>
+        <div class="modal fade" id="carDetailsModal" tabindex="-1" aria-labelledby="carDetailsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <!-- Cabeçalho -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="carDetailsModalLabel">Detalhes do Veículo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <!-- Corpo -->
+              <div class="modal-body">
+                <div class="row flex-column">
+                  <!-- Imagem -->
+                  <div class="col-12 text-center mb-3">
+                    <img src="" alt="Carro" class="img-fluid modal-car-image" id="modalCarImage">
+                  </div>
+                  <!-- Informações -->
+                  <div class="col-12">
+                    <h4 id="modalCarTitle" class="modal-car-title">Título do Carro</h4>
+                    <p id="modalCarSubtitle" class="modal-car-subtitle">Subtítulo do Carro</p>
+                    <ul class="list-group modal-car-info">
+                      <li class="list-group-item">
+                        <strong>Custo por km:</strong> <span id="modalPricePerKm"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Consumo em estrada:</strong> <span id="highwayFuelConsumption"></span>
+                      </li>
+                      <li class="list-group-item">
+                        <strong>Consumo em cidade:</strong> <span id="cityFuelConsumption"></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Rodapé -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
 
   </main>
 
 
-
-
   <footer>
-    <div class="container-fluid d-flex justify-content-between align-items-center w-100" id="footer-container">
-      <div id="rowFooter" class="row w-100">
-        <div id="start-container" class="col-4 d-flex justify-content-start  align-items-center">
+    <div class="container-fluid d-flex justify-content-center align-items-center w-100 m-0 p-0" id="footer-container">
+      <div id="rowFooter" class="row w-100 p-0 m-0 d-flex justify-content-center align-items-center">
+        <div id="start-container" class="col-4 p-0">
           <div id="imgFooterContainer">
             <img src="../imgs/Logo da Fiap 1.png" id="fiapLogo" class="img-fluid footer-img" alt="Logo da fiap">
             <img src="../imgs/greenEnergy.png" id="greenEnergy" class="img-fluid footer-img" alt="Logo da green energy">
           </div>
         </div>
-        <div id="nameGroup" class="col-4 d-flex justify-content-center align-items-center">
+        <div id="nameGroup" class="col-4 d-flex justify-content-center align-items-center p-0">
           <p id="principalTagP"></p>
         </div>
-        <div id="membersNameContainer" class="col-4 d-flex justify-content-end align-items-center">
+        <div id="membersNameContainer" class="col-4 d-flex align-items-center justify-content-center p-0">
           <div class="d-flex gap-5 ">
             <div class="membersName">
               <p>Angelo Batista</p>
