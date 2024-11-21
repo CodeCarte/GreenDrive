@@ -25,6 +25,12 @@ body {
   font-size: 1.5rem;
 }
 
+@media (max-width: 991px) {
+  main #downArrow {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-section {
     height: 60vh;
@@ -54,5 +60,19 @@ body {
 
   .carousel-image {
     max-height: 400px;
+  }
+}
+
+#pinkDownArrow {
+  animation: bounce 2s infinite;
+  margin-bottom: 100px;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
