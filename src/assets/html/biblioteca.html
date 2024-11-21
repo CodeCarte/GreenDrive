@@ -1,89 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/biblioteca.css">
-    <script src="../js/biblioteca.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/biblioteca.css">
+  <script src="../js/biblioteca.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg p-3 bg-white">
-            <div class="container-fluid">
-              <a href="" class="navbar-brand"><img src="./assets/imgs/greeendriveLogo.png" class="img-fluid" id="greenDriveLogo" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto fs-5">
-                  <li class="nav-item"><a href="" class="nav-link">Impactos ambientais</a></li>
-                  <li class="nav-item"><a href="" class="nav-link">Eficiência dos carros</a></li>
-                  <li class="nav-item"><a href="" class="nav-link">Carros do futuro</a></li>
-                  <li class="nav-item"><a href="" class="nav-link">Biblioteca</a></li>
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-      <div id="libraryContainer" class="container-fluid">
-        <div class="img-introduction-container">
-          <img src="../imgs/libraryCarImage.png" class="carLibraryImg img-fluid w-100 position-absolute" alt="imagem de um carro">
+  <header>
+    <nav class="navbar navbar-expand-lg p-3 bg-white">
+      <div class="container-fluid">
+        <a href="" class="navbar-brand"><img src="./assets/imgs/greeendriveLogo.png" class="img-fluid"
+            id="greenDriveLogo" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+          aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ms-auto fs-5">
+            <li class="nav-item"><a href="" class="nav-link">Impactos ambientais</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Eficiência dos carros</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Carros do futuro</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Biblioteca</a></li>
+          </ul>
         </div>
-        <div class="titleLibraryCarContainer">
-          <h1 class="h1LibraryTitle">GreenDrive</h1>
-          <p class="pLibraryTitle">Compare e encontre os veículos mais eficientes e sustentáveis do mercado</p>
-        </div>
-        <section class="searchBarContainer d-flex align-items-center justify-content-start gap-3 p-5">
-          <input placeholder="Buscar veículos..." type="text">
-          <select name="" id="">
-            <option disabled selected value=""><span class="selectTitle">Tipo de Motor</span></option>
-            <option value="Híbrido">Híbrido</option>
-            <option value="Elétrico">Elétrico</option>
-            <option value="Combustão">Combustão</option>
-          </select>
-          <select id="co2Emission" onchange="filterCards()">
-            <option disabled selected value=""><span class="selectTitle">Emissão de CO₂</span></option>
-            <option value="baixo">Baixo (0-50 g/km)</option>
-            <option value="moderado">Moderado (51-150 g/km)</option>
-            <option value="alto">Alto (151+ g/km)</option>
-          </select>
-          <button class="buttonSearchBar">Buscar</button>
-        </section>
       </div>
-    </main>
-    <footer>
-        <div class="container-fluid d-flex justify-content-between align-items-center w-100" id="footer-container">
-          <div id="rowFooter" class="row w-100">
-            <div id="start-container" class="col-4 d-flex justify-content-start  align-items-center">
-              <div id="imgFooterContainer">
-                <img src="../imgs/Logo da Fiap 1.png" id="fiapLogo" class="img-fluid footer-img" alt="Logo da fiap">
-                <img src="../imgs/greenEnergy.png" id="greenEnergy" class="img-fluid footer-img" alt="Logo da green energy">
-              </div>
-            </div>
-            <div id="nameGroup" class="col-4 d-flex justify-content-center align-items-center">
-              <p id="principalTagP"></p > 
-            </div>
-            <div id="membersNameContainer" class="col-4 d-flex justify-content-end align-items-center">
-              <div class="d-flex gap-5 ">
-                <div class="membersName">
-                  <p>Angelo Batista</p>
-                  <p>Victor Martins</p>
-                </div>
-                <div class="membersName">
-                  <p>Andre Flores</p>
-                  <p>Yasmin Kimura</p>
-                </div>
-                <p id="yearTagP">2024*</p>
-              </div>
-            </div>
+    </nav>
+  </header>
+  <main>
+    <div id="libraryContainer" class="container-fluid">
+      <div class="img-introduction-container">
+        <img src="../imgs/libraryCarImage.png" class="carLibraryImg img-fluid w-100 position-absolute"
+          alt="imagem de um carro">
+      </div>
+      <div class="titleLibraryCarContainer">
+        <h1 class="h1LibraryTitle">GreenDrive</h1>
+        <p class="pLibraryTitle">Compare e encontre os veículos mais eficientes e sustentáveis do mercado</p>
+      </div>
+      <section class="searchBarContainer d-flex align-items-center justify-content-start gap-3 p-5">
+        <input placeholder="Buscar veículos..." type="text">
+        <select name="" id="">
+          <option disabled selected value=""><span class="selectTitle">Tipo de Motor</span></option>
+          <option value="Híbrido">Híbrido</option>
+          <option value="Elétrico">Elétrico</option>
+          <option value="Combustão">Combustão</option>
+        </select>
+        <select id="co2Emission" onchange="filterCards()">
+          <option disabled selected value=""><span class="selectTitle">Emissão de CO₂</span></option>
+          <option value="baixo">Baixo (0-50 g/km)</option>
+          <option value="moderado">Moderado (51-150 g/km)</option>
+          <option value="alto">Alto (151+ g/km)</option>
+        </select>
+        <button class="buttonSearchBar">Buscar</button>
+      </section>
+    </div>
+
+    <div class="container py-5">
+
+      <div class="car-card">
+        <div class="eco-badge">ECO</div>
+
+        <div class="car-image-container">
+          <img src="../imgs/toyotacorollahibrido.jpg" alt="Toyota Corolla Híbrido" class="car-image">
+        </div>
+
+
+        <div class="card-content">
+          <h2 class="car-title">Toyota Corolla Híbrido</h2>
+          <p class="car-subtitle">2024 • Híbrido</p>
+
+          <div class="info-badge">
+            <span class="info-label">Emissão de CO₂</span>
+            <span class="info-value">/ 104 g/km</span>
+          </div>
+
+          <div class="info-badge">
+            <span class="info-label">Eficiência</span>
+            <span class="info-value">/ 45%</span>
+          </div>
+
+          <button class="details-button">Ver Detalhes</button>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+
+  <footer>
+    <div class="container-fluid d-flex justify-content-between align-items-center w-100" id="footer-container">
+      <div id="rowFooter" class="row w-100">
+        <div id="start-container" class="col-4 d-flex justify-content-start  align-items-center">
+          <div id="imgFooterContainer">
+            <img src="../imgs/Logo da Fiap 1.png" id="fiapLogo" class="img-fluid footer-img" alt="Logo da fiap">
+            <img src="../imgs/greenEnergy.png" id="greenEnergy" class="img-fluid footer-img" alt="Logo da green energy">
           </div>
         </div>
-    </footer>
+        <div id="nameGroup" class="col-4 d-flex justify-content-center align-items-center">
+          <p id="principalTagP"></p>
+        </div>
+        <div id="membersNameContainer" class="col-4 d-flex justify-content-end align-items-center">
+          <div class="d-flex gap-5 ">
+            <div class="membersName">
+              <p>Angelo Batista</p>
+              <p>Victor Martins</p>
+            </div>
+            <div class="membersName">
+              <p>Andre Flores</p>
+              <p>Yasmin Kimura</p>
+            </div>
+            <p id="yearTagP">2024*</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

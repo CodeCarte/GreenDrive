@@ -75,3 +75,101 @@ main .buttonSearchBar {
 main .buttonSearchBar:hover {
   background-color: #353535;
 }
+
+/*Card do Carro*/
+
+.car-card {
+  background: #ffffff;
+  border-radius: 16px;
+  max-width: 300px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.eco-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #2e7d32;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  z-index: 1;
+}
+
+.car-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1.5rem;
+  background: #f8f9fa;
+}
+
+.car-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #212529;
+}
+
+.car-subtitle {
+  font-size: 1rem;
+  color: #6c757d;
+  margin: 4px 0 16px 0;
+}
+
+.info-badge {
+  background: #e9ecef;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.info-label {
+  color: #212529;
+  font-weight: 500;
+}
+
+.info-value {
+  color: #68a043;
+  margin-left: 4px;
+}
+
+.details-button {
+  width: 100%;
+  background: #68a043;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.details-button:hover {
+  background: #557f35;
+}
+
+/*Card Responsividade*/
+
+@media (max-width: 768px) {
+  .car-card {
+    margin: 0 auto;
+  }
+}
