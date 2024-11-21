@@ -4,6 +4,10 @@ footer #footer-container {
   font-size: 20px;
 }
 
+footer #nameGroup {
+  padding-left: 39px;
+}
+
 footer #principalTagP::after {
   content: 'Desenvolvido por "CodeCartel"';
 }
