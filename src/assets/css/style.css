@@ -331,6 +331,7 @@ main .VideoPitch {
     align-items: center;
     justify-content: center;
     margin-left: 0px;
+    margin-top: 0px;
   }
   main .libraryInfoPart1 {
     text-align: center;
