@@ -315,29 +315,27 @@ main .buttonSearchBar:hover {
 }
 
 body.modal-open {
-  overflow: auto !important; /* Mantém o scroll padrão da página */
-  padding-right: 0 !important; /* Remove ajustes desnecessários */
+  overflow: auto !important;
+  padding-right: 0 !important;
 }
 
-/* Tamanho reduzido do modal */
 .modal-dialog {
-  max-width: 30%; /* Modal mais compacto */
-  margin: 1rem auto; /* Margem para centralização */
+  max-width: 30%;
+  margin: 1rem auto;
 }
 
-/* Configuração do conteúdo do modal */
 .modal-content {
-  max-height: 85vh; /* Limite de altura */
-  overflow-y: auto; /* Scroll interno apenas se necessário */
+  max-height: 85vh;
+  overflow-y: auto;
   padding: 1.5rem;
-  border-radius: 12px; /* Bordas arredondadas */
-  border: 2px solid #ccc; /* Borda padrão */
+  border-radius: 12px;
+  border: 2px solid #ccc;
 }
 
 /* Ajuste das fontes */
 .modal-title,
 .modal-car-title {
-  font-size: 1.3rem; /* Títulos menores */
+  font-size: 1.3rem;
   font-weight: bold;
 }
 
@@ -346,28 +344,24 @@ body.modal-open {
   margin-bottom: 1rem;
 }
 
-/* Bordas padronizadas para os itens da lista */
 .list-group-item {
   font-size: 0.9rem;
-  border: 2px solid #ccc; /* Bordas padronizadas */
-  border-radius: 10px; /* Bordas arredondadas */
-  margin-bottom: 0.8rem; /* Espaçamento entre itens */
-  padding: 1rem; /* Espaçamento interno */
-  background-color: #f8f8f8; /* Fundo leve */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Leve sombra */
+  margin-bottom: 0.8rem;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: none;
 }
 
-/* Imagens com dimensões consistentes */
 .modal-car-image {
-  width: 200px; /* Largura fixa */
-  height: 150px; /* Altura fixa */
-  object-fit: cover; /* Ajusta sem distorções */
-  border: 2px solid #ccc; /* Bordas padronizadas */
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 2px solid #ccc;
   border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-/* Alinhamento responsivo */
 .modal-body .row {
   display: flex;
   flex-direction: column;
@@ -375,10 +369,64 @@ body.modal-open {
 }
 
 .modal-footer {
-  justify-content: center; /* Botões centralizados */
+  justify-content: center;
 }
 
 button {
   padding: 0.6rem 1.2rem;
   font-size: 1rem;
+}
+
+@media (max-width: 1300px) {
+  .modal-dialog {
+    max-width: 50%;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .modal-title,
+  .modal-car-title {
+    font-size: 1.1rem;
+  }
+
+  .modal-car-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .modal-car-image {
+    width: 150px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-dialog {
+    max-width: 90%;
+  }
+
+  .modal-content {
+    padding: 0.8rem;
+  }
+
+  .modal-title,
+  .modal-car-title {
+    font-size: 1rem;
+  }
+
+  .modal-car-subtitle {
+    font-size: 0.7rem;
+  }
+
+  .modal-car-image {
+    width: 120px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .modal-dialog {
+    max-width: 60%;
+  }
 }
