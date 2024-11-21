@@ -28,10 +28,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto fs-5">
-            <li class="nav-item"><a href="" class="nav-link">Impactos ambientais</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Eficiência dos carros</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Carros do futuro</a></li>
-            <li class="nav-item"><a href="" class="nav-link">Biblioteca</a></li>
+            <li class="nav-item"><a href="../html/impacto_ambientais.html" class="nav-link">Impactos ambientais</a></li>
+            <li class="nav-item"><a href="../html/efiencia_dos_carros.html" class="nav-link">Eficiência dos carros</a>
+            </li>
+            <li class="nav-item"><a href="../html/carros_dos_futuro.html" class="nav-link">Carros do futuro</a></li>
+            <li class="nav-item"><a href="../html/biblioteca.html" class="nav-link">Biblioteca</a></li>
           </ul>
         </div>
       </div>
@@ -66,36 +67,32 @@
     </div>
 
     <div class="container py-5">
-
-      <div class="car-card">
-        <div class="eco-badge">ECO</div>
-
-        <div class="car-image-container">
-          <img src="../imgs/toyotacorollahibrido.jpg" alt="Toyota Corolla Híbrido" class="car-image">
-        </div>
-
-
-        <div class="card-content">
-          <h2 class="car-title">Toyota Corolla Híbrido</h2>
-          <p class="car-subtitle">2024 • Híbrido</p>
-
-          <div class="info-badge">
-            <span class="info-label">Emissão de CO₂</span>
-            <span class="info-value">/ 104 g/km</span>
+      <div class="row g-4">
+        <!-- Repetir este col para cada card -->
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="car-card h-100">
+            <div class="eco-badge">ECO</div>
+            <div class="car-image-container">
+              <img src="../imgs/toyotacorollahibrido.jpg" alt="Toyota Corolla Híbrido" class="car-image">
+            </div>
+            <div class="card-content">
+              <h2 class="car-title">Toyota Corolla Híbrido</h2>
+              <p class="car-subtitle">2024 • Híbrido</p>
+              <div class="info-badge">
+                <span class="info-label">Emissão de CO₂</span>
+                <span class="info-value">/ 104 g/km</span>
+              </div>
+              <div class="info-badge">
+                <span class="info-label">Eficiência</span>
+                <span class="info-value">/ 45%</span>
+              </div>
+              <button class="details-button">Ver Detalhes</button>
+            </div>
           </div>
-
-          <div class="info-badge">
-            <span class="info-label">Eficiência</span>
-            <span class="info-value">/ 45%</span>
-          </div>
-
-          <button class="details-button">Ver Detalhes</button>
-
-
         </div>
+        <!-- Fim do col -->
       </div>
     </div>
-
 
 
 
