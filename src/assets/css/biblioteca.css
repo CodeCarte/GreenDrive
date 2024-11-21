@@ -80,6 +80,7 @@ main .buttonSearchBar:hover {
 .car-card {
   background: #ffffff;
   border-radius: 20px;
+  width: 351.33px;
   height: 100%;
   position: relative;
   position: relative;
@@ -210,6 +211,7 @@ main .buttonSearchBar:hover {
 .car-card-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 140px;
 }
 
 /*Card Responsividade*/
