@@ -8,6 +8,10 @@ body {
   background: rgba(0, 0, 0, 0.4);
 }
 
+#banner-title {
+  font-size: 3rem;
+}
+
 .green-title {
   color: #68a043;
   font-size: 2.5rem;
@@ -22,7 +26,7 @@ body {
 }
 
 .pink-title {
-  color: #ff9999;
+  color: #eda7a7;
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -49,9 +53,13 @@ body {
   margin-bottom: 0;
 }
 
+.curiosity {
+  color: #618f1f;
+}
+
 .section-subtitle {
-  color: #ff9999;
-  font-size: 1.1rem;
+  color: #eda7a7;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.75rem;
 }
@@ -65,7 +73,7 @@ body {
 }
 
 .importance-title {
-  color: #68a043;
+  color: #618f1f;
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
@@ -132,7 +140,7 @@ body {
 }
 
 .impact-title {
-  color: #68a043;
+  color: #618f1f;
   font-size: 2.8rem;
   font-weight: bold;
   text-align: center;
@@ -157,7 +165,7 @@ body {
 }
 
 .stat-number {
-  color: #ff9999;
+  color: #eda7a7;
   font-size: 3.6rem;
   font-weight: bold;
   line-height: 1;
